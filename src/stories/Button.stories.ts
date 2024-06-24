@@ -28,25 +28,44 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
+    backgroundColor: "green",
+    fontColor:'white',
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: 'Button',
+    backgroundColor: "lightgreen"
   },
+};
+
+export const Icon: Story = {
+  args: {
+    primary: true,
+    icon: true,
+    label: "Button",
+    backgroundColor: "green",
+    fontColor:'white',
+  }
 };
 
 export const Large: Story = {
   args: {
+    primary: true,
     size: 'large',
     label: 'Button',
+    backgroundColor: "green",
+    fontColor:'white',
   },
 };
 
 export const Small: Story = {
   args: {
+    primary: true,
     size: 'small',
     label: 'Button',
+    backgroundColor: "green",
+    fontColor:'white',
   },
 };

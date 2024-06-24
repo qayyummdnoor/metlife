@@ -1,5 +1,7 @@
 import React from 'react';
 import './button.css';
+import { Icon } from './Button.stories';
+import { FaBeer } from "react-icons/fa";
 
 interface ButtonProps {
   /**
@@ -7,9 +9,19 @@ interface ButtonProps {
    */
   primary?: boolean;
   /**
+   * /**
+   * Is this the principal call to action on the page?
+   */
+  icon?: boolean;
+  /**
    * What background color to use
    */
   backgroundColor?: string;
+  /**
+   *  /**
+   * What background color to use
+   */
+  fontColor?: string;
   /**
    * How large should the button be?
    */
@@ -29,8 +41,10 @@ interface ButtonProps {
  */
 export const Button = ({
   primary = false,
+  icon = false, 
   size = 'medium',
   backgroundColor,
+  fontColor,
   label,
   ...props
 }: ButtonProps) => {
@@ -41,7 +55,7 @@ export const Button = ({
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       {...props}
     >
-      {label}
+      {icon ? <FaBeer /> : label}
       <style jsx>{`
         button {
           background-color: ${backgroundColor};

@@ -1,7 +1,6 @@
 interface TextFieldProps {
   // label
   label?: string;
-  labelfontSize?: string;
   // input
   fontColor?: string;
   fontSize?: string;

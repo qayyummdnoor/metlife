@@ -17,8 +17,29 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label:'TextField',
-    maxLength: 11, //not sure why not working. all the props showed at storybook
-    placeholder:'hello' //not sure why not working. all the props showed at storybook
+    label:'TextFields',
+    fontColor:'black',
+    maxLength: 11, 
+    placeholder:'hello' 
+  },
+};
+
+export const Small: Story = {
+  args: {
+    label:'TextFields',
+    fontColor:'black',
+    fontSize:'12px',
+    maxLength: 11,
+    placeholder:'hello'
+  },
+}
+
+export const Large: Story = {
+  args: {
+    label:'TextFields',
+    fontColor:'black',
+    fontSize:'20px',
+    maxLength: 11,
+    placeholder:'hello'
   },
 };

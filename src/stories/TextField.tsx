@@ -36,6 +36,9 @@ export const TextField = ({
           style={{
             fontSize: fontSize,
             color: fontColor,
+            borderWidth:0,
+            borderBottomWidth:1,
+            borderColor:'grey',
           }}
           />
       </label>
